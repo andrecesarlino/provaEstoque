@@ -62,11 +62,6 @@ class ProdutoController extends Controller
     public function venderVariosProd(Request $request)
     {
 
-        foreach ($request->id as $params) {
-            return $params;
-        }
-
-
 
     }
 }
