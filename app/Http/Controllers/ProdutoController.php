@@ -62,6 +62,11 @@ class ProdutoController extends Controller
     public function venderVariosProd(Request $request)
     {
 
+        for ($i = 1; $i <= count($request->id); $i++) {
+            return Produto::find($request->id);
+
+        }
+
 
     }
 }
