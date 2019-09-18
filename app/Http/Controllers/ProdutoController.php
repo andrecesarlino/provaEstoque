@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Produto;
+use Illuminate\Support\Facades\Input;
 
 class ProdutoController extends Controller
 {
@@ -61,11 +62,18 @@ class ProdutoController extends Controller
 
     public function venderVariosProd(Request $request)
     {
-
-        for ($i = 1; $i <= count($request->id); $i++) {
-            return Produto::find($request->id);
-
-        }
+//        $valores = json_decode($request->getContent(),true );
+//        $valores = json_encode(Input::get('id'));
+//        foreach ($valores as $id) {
+//            return $id;
+//        }
+//        for ($i = 1; $i <= count($request->id); $i++) {
+//
+//            $produto = Produto::find($request->id);
+//            $produto->quantidade = 10;
+//            return $produto;
+//
+//        }
 
 
     }
