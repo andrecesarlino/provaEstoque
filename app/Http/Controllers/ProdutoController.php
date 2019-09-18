@@ -60,6 +60,8 @@ class ProdutoController extends Controller
        }
     }
 
+
+
     public function venderVariosProd(Request $request)
     {
 //        $valores = json_decode($request->getContent(),true );
